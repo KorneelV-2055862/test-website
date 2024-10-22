@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body data-bs-theme="light">
+    <header class="sticky-top">
+        <%- include('../partials/header', {currentPage: 'home' }); %>
+    </header>
+
+    <main class="container">
+        <h1>Home</h1>
+        <p>Welcome to my website!</p><br>
+    </main>
+
+    <footer class="container">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>

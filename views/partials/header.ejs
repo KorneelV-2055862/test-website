@@ -1,0 +1,23 @@
+<nav class="navbar py-3 border-bottom border-body navbar-expand-lg bg-primary text-light"
+    style="--bs-bg-opacity: .5; background: rgb(3,64,153);
+background: linear-gradient(135deg, rgba(3,64,153,0.7475722710959384) 0%, rgba(32,106,212,0.7531745119922969) 35%, rgba(59,137,252,0.7475722710959384) 100%); ">
+    <div class="container">
+        <a href="$" class="navbar-brand fs-3">Korneel Vanhulst</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fs-5">
+                <li class="nav-item px-3">
+                    <a href="/" class="nav-link <%= currentPage === 'home' ? 'active' : '' %>" <%=currentPage==='home'
+                        ? 'aria-current="page"' : '' %>>Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="/about" class="nav-link <%= currentPage === 'about' ? 'active' : '' %>"
+                        <%=currentPage==='about' ? 'aria-current="page"' : '' %>>About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
